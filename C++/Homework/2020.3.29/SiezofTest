@@ -1,0 +1,21 @@
+/*
+homework 14.13 SizeofTest.cpp
+*/
+#include <cstdlib>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+int main() {
+    std::ofstream cout("datasize.dat");
+    cout << "char" << std::setw(21) << sizeof(char) << "\nunsigned char"
+         << std::setw(12) << sizeof(unsigned char) << "\nshort int"
+         << std::setw(16) << sizeof(short int) << "\nunsigned short int"
+         << std::setw(7) << sizeof(unsigned short) << "\nint" << std::setw(22)
+         << sizeof(int) << "\nunsigned int" << std::setw(13) << sizeof(unsigned)
+         << "\nlong int" << std::setw(17) << sizeof(long)
+         << "\nunsigned long int" << std::setw(8) << sizeof(unsigned long)
+         << "\nfloat" << std::setw(20) << sizeof(float) << "\ndouble"
+         << std::setw(19) << sizeof(double) << "\nlong double" << std::setw(14)
+         << sizeof(long double) << '\n';
+}
+// this is end

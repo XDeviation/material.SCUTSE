@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "debug_cpp_files",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${fileDirname}\\/Print_User_Registered.cpp",
+                "-g",
+                "${fileDirname}\\/Print_User_Login.cpp",
+                "-g",
+                "${fileDirname}/${fileBasename}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.out",
+                "-std=c++17",
+                "-O0",
+                "-Wall",
+                "-Wextra",
+            ],
+            "group": "build"
+        }
+    ]
+}
